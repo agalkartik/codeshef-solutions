@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+#define RACE 400
+int main() {
+ int t;
+ cin>>t;
+ while(t--){
+     float x,y,z;
+     cin>>x >>y >>z;
+     if(RACE/x > RACE/y && RACE/x > RACE/z){
+         cout<< "ALICE" <<endl;
+     }
+     else if(RACE/y > RACE/x && RACE/y > RACE/z){
+         cout<< "BOB" <<endl;
+     }
+     else
+       cout<< "CHARLIE" <<endl;
+ }
+	return 0;
+}
